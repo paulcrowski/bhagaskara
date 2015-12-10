@@ -1,3 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+body {
+  font-family: 'Lato', sans-serif; }
 
+h1, h2, h3, p {
+  padding: 10px; }
+
+.container-fluid {
+  padding: 0; }
+
+.mainHeader {
+  background: aquamarine url("../images/river.jpg") no-repeat center scroll;
+  color: white;
+  padding: 200px;
+  display: table;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  max-height: 150px;
+  box-sizing: border-box;
+  border: solid 5px red; }
+
+.navbar.navbar-default {
+  margin-bottom: 0; }
+
+.greyLine {
+  background-color: lightgray; }
 
 /*# sourceMappingURL=style.css.map */
