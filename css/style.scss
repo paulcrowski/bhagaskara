@@ -8,7 +8,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, p, img {
+h1, h2, h3, p, img, a {
   padding: 10px;
 }
 
@@ -65,12 +65,12 @@ button {
 
 /* visited link */
 .buttonRound:visited {
-  color: green;
+  color: $secendarycolor;
 }
 
 /* mouse over link */
 .buttonRound:hover {
-  color: blue;
+  color: $secendarycolor;
   border: solid 1px $secendarycolor;
   text-decoration: none;
 }
@@ -78,6 +78,7 @@ button {
 /* selected link */
 .buttonRound:active {
   color: blue;
+  text-decoration: none;
 }
 
 .biggerCircle {

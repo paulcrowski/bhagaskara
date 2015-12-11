@@ -2,7 +2,7 @@
 body {
   font-family: 'Lato', sans-serif; }
 
-h1, h2, h3, p, img {
+h1, h2, h3, p, img, a {
   padding: 10px; }
 
 [class|=col] {
@@ -47,17 +47,18 @@ button {
 
 /* visited link */
 .buttonRound:visited {
-  color: green; }
+  color: darkslateblue; }
 
 /* mouse over link */
 .buttonRound:hover {
-  color: blue;
+  color: darkslateblue;
   border: solid 1px darkslateblue;
   text-decoration: none; }
 
 /* selected link */
 .buttonRound:active {
-  color: blue; }
+  color: blue;
+  text-decoration: none; }
 
 .biggerCircle {
   padding: 40px;
