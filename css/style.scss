@@ -28,8 +28,6 @@ button {
 .intro {
   display: table;
   width: 100%;
-  height: auto;
-
   text-align: center;
   color: #fff;
   background: url(../images/river.jpg) no-repeat bottom center scroll;
@@ -38,9 +36,8 @@ button {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 100%;
-  padding: 0;
-  padding: 270px 0;
+  height: 80%;
+  padding: 100px 0;
 }
 
 .intro .intro-body {
