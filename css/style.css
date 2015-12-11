@@ -14,22 +14,61 @@ button {
 .container-fluid {
   padding: 0; }
 
-.mainHeader {
-  background: cadetblue url("../images/river.jpg") no-repeat center scroll;
-  color: white;
-  padding: 200px;
+.intro {
   display: table;
-  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  background: url(../images/river.jpg) no-repeat bottom center scroll;
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  max-height: 150px;
-  box-sizing: border-box;
-  border: solid 5px red; }
+  height: 100%;
+  padding: 0;
+  padding: 270px 0; }
+
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle; }
+
+.intro .intro-body .brand-heading {
+  font-size: 40px; }
+
+.intro .intro-body .intro-text {
+  font-size: 18px; }
 
 .navbar.navbar-default {
   margin-bottom: 0; }
+
+.cls-1, .cls-2, .cls-4 {
+  fill: #fff; }
+
+.cls-1 {
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 4px;
+  fill-opacity: 0.1; }
+
+.cls-1:hover,
+.cls-2:hover {
+  stroke: #9f449b;
+  stroke-linejoin: round;
+  stroke-width: 4px;
+  fill-opacity: 1;
+  fill: #9f449b; }
+
+.cls-1, .cls-2 {
+  fill-rule: evenodd; }
+
+.cls-3, .cls-4 {
+  font-size: 18px; }
+
+.cls-4 {
+  text-anchor: middle;
+  font-family: latoregular, sans-serif; }
 
 .greyLine {
   background-color: lightgray; }
