@@ -15,7 +15,7 @@ button {
   padding: 0; }
 
 .mainHeader {
-  background: aquamarine url("../images/river.jpg") no-repeat center scroll;
+  background: cadetblue url("../images/river.jpg") no-repeat center scroll;
   color: white;
   padding: 200px;
   display: table;
@@ -34,13 +34,36 @@ button {
 .greyLine {
   background-color: lightgray; }
 
-*[class^="prlx"] {
-  position: absolute;
-  width: 100%;
-  height: 120%;
-  z-index: -1; }
+.paralax {
+  background-color: cadetblue; }
 
-.prlx-1 {
-  background: url("../images/river2.jpg") repeat; }
+.buttonRound {
+  border: solid 1px cadetblue;
+  color: cadetblue;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px; }
+
+/* visited link */
+.buttonRound:visited {
+  color: green; }
+
+/* mouse over link */
+.buttonRound:hover {
+  color: blue;
+  border: solid 1px darkslateblue;
+  text-decoration: none; }
+
+/* selected link */
+.buttonRound:active {
+  color: blue; }
+
+.biggerCircle {
+  padding: 40px;
+  background-color: lightgray; }
+
+.progress-bar {
+  background-color: cadetblue; }
 
 /*# sourceMappingURL=style.css.map */
