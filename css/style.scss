@@ -8,6 +8,10 @@ h1, h2, h3, p, img {
   padding: 10px;
 }
 
+[class|=col] {
+  border: 5px solid gold;
+}
+
 button {
   margin: 10px;
 }
@@ -38,34 +42,7 @@ button {
   background-color: lightgray;
 }
 
-// svg
-cls-1, .cls-2, .cls-4 {
-  fill: ‪#‎fff‬;
-}
-.cls-1 {
-  stroke: #fff;
-  stroke-linejoin: round;
-  stroke-width: 4px;
-  fill-opacity: 0.1;
-}
-.cls-1:hover,
-.cls-2:hover {
-  stroke: ‪#‎9f449b‬;
-  stroke-linejoin: round;
-  stroke-width: 4px;
-  fill-opacity: 1;
-  fill: #9f449b;
-}
-.cls-1, .cls-2 {
-  fill-rule: evenodd;
-}
-.cls-3, .cls-4 {
-  font-size: 14px;
-}
-.cls-4 {
-  text-anchor: middle;
-  font-family: latoregular, sans-serif;
-}
+
 // paralax
 
 *[class^="prlx"] {
