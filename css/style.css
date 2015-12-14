@@ -25,7 +25,7 @@ button {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 80%;
+  height: 100%;
   padding: 100px 0; }
 
 .intro .intro-body {
@@ -41,6 +41,7 @@ button {
 .navbar.navbar-default {
   margin-bottom: 0; }
 
+svg
 .cls-1, .cls-2, .cls-4 {
   fill: #fff; }
 
@@ -60,9 +61,6 @@ button {
 
 .cls-1, .cls-2 {
   fill-rule: evenodd; }
-
-.cls-3, .cls-4 {
-  font-size: 18px; }
 
 .cls-4 {
   text-anchor: middle;

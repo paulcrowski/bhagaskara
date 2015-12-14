@@ -36,7 +36,7 @@ button {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 80%;
+  height: 100%;
   padding: 100px 0;
 }
 
@@ -74,7 +74,7 @@ button {
 }
 
 
-// svg
+ svg
 .cls-1, .cls-2, .cls-4 {
   fill: #fff;
 }
@@ -95,13 +95,32 @@ button {
 .cls-1, .cls-2 {
   fill-rule: evenodd;
 }
-.cls-3, .cls-4 {
-  font-size: 18px;
-}
+//.cls-3, .cls-4 {
+//  font-size: 18px;
+//}
 .cls-4 {
   text-anchor: middle;
   font-family: latoregular, sans-serif;
 }
+//
+//svg {
+//  width: 65%;
+//  stroke: #fff;
+//  stroke-linejoin: round;
+//  stroke-width: 2px;
+//  fill: #fff;
+//  fill-opacity: 0.1;
+//  fill-rule: evenodd;
+//  transition: 1s;
+//}
+//svg:hover {
+//  stroke: #9f449b;
+//  stroke-linejoin: round;
+//  stroke-width: 1px;
+//  fill-opacity: 0.1;
+//  fill: #9f449b;
+//  fill-rule: evenodd;
+//}
 // 4 boxes in grey line
 .greyLine {
   background-color: $rowcolor;
