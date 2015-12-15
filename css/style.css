@@ -75,6 +75,10 @@ svg
 .greyLine {
   background-color: lightgray; }
 
+.laptop {
+  float: left;
+  width: 50%; }
+
 .paralax {
   background-color: cadetblue; }
 
