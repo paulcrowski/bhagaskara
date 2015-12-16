@@ -49,6 +49,11 @@ button {
 .navbar.navbar-default {
   margin-bottom: 0; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
 svg
 .cls-1, .cls-2, .cls-4 {
   fill: #fff; }
