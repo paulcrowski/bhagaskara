@@ -103,6 +103,9 @@ svg
   display: inline-block;
   margin: 10px; }
 
+.img-responsive {
+  margin: 0 auto; }
+
 /* visited link */
 .buttonRound:visited {
   color: darkslateblue; }
