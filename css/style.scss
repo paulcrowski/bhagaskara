@@ -3,6 +3,22 @@
 $primarycolor : cadetblue;
 $secendarycolor : darkslateblue;
 $rowcolor: lightgray;
+$buttonColor: palevioletred;
+$buttonColorHover: #9f449b;
+$buttonBorder: violet;
+
+
+
+.btn-default {
+  border-color: $buttonBorder;
+  background-color: $buttonColor;
+}
+
+.btn-default:hover
+{
+  border-color: $buttonColor;
+  background-color: $buttonColorHover;
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -188,3 +204,26 @@ button {
 
 // ########### 365
 
+.numData {
+  font-size: 1.6em;
+}
+
+// ############## our portfolio
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
