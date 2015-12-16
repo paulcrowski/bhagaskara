@@ -7,6 +7,11 @@ $(document).ready(function(){
     var menu = $(".navbar");
     var menuOffsetFromTop = menu.position().top;
 
+    var animate1 = $(".animate1");
+    var animate2 = $(".animate2");
+    var menuOffanimate1 = animate1.position().top;
+    var menuOffanimate2 = animate2.position().top;
+
     $(window).on("scroll", function(event){
         console.log($(window).scrollTop());
         console.log(menu.position());

@@ -125,6 +125,64 @@ svg
 .progress-bar {
   background-color: cadetblue; }
 
+.black {
+  width: 100%;
+  height: 20px;
+  background-color: lightgray;
+  margin-bottom: 22px; }
+
+.violet-bell {
+  width: 90%;
+  height: 20px;
+  background-color: violet;
+  animation: bar1 3s;
+  -moz-animation: bar 3s;
+  -webkit-animation: bar1 3s; }
+
+@keyframes bar1 {
+  0% {
+    width: 0; }
+  100% {
+    width: 90%; } }
+.violet-bell2 {
+  width: 70%;
+  height: 20px;
+  background-color: violet;
+  animation: bar2 3s;
+  -moz-animation: bar2 3s;
+  -webkit-animation: bar2 3s; }
+
+@keyframes bar2 {
+  0% {
+    width: 0; }
+  100% {
+    width: 70%; } }
+.violet-bell3 {
+  width: 75%;
+  height: 20px;
+  background-color: violet;
+  animation: bar3 3s;
+  -moz-animation: bar3 3s;
+  -webkit-animation: bar3 3s; }
+
+@keyframes bar3 {
+  0% {
+    width: 0; }
+  100% {
+    width: 75%; } }
+.violet-bell4 {
+  width: 80%;
+  height: 20px;
+  background-color: violet;
+  animation: bar4 3s;
+  -moz-animation: bar4 3s;
+  -webkit-animation: bar4 3s; }
+
+@keyframes bar4 {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
 .numData {
   font-size: 1.6em; }
 
