@@ -4,6 +4,7 @@
 
 // Jquery
 
+//JQ sticky menu
 $(document).ready(function(){
     console.log('dziala');
     var menu = $(".navbar");
@@ -15,8 +16,8 @@ $(document).ready(function(){
     var menuOffanimate2 = animate2.position().top;
 
     $(window).on("scroll", function(event){
-        console.log($(window).scrollTop());
-        console.log(menu.position());
+        //console.log($(window).scrollTop());
+        //console.log(menu.position());
         if($(window).scrollTop()> menuOffsetFromTop) {
             menu.addClass("navbar-fixed-top");
         }
@@ -24,9 +25,51 @@ $(document).ready(function(){
             menu.removeClass("navbar-fixed-top");
         }
     });
+
+    // slider
+    function slider(numberPhotos) {
+        console.log('dziala slider');
+        var arrowLeft = $('.arrow-left'); // strzalka lewa
+        var arrowRight = $('.arrow-right'); // strzalka prawa
+        var sliderPhoto = $('#sliderPhoto'); // fotka
+        var number = 0; // zmienna pomocnicza
+
+        arrowLeft.click(function() {
+            console.log( "klikneles lewa strzalke" );
+            if (number === 0) {
+                sliderPhoto.hide();
+                number = numberPhotos;
+                sliderPhoto.attr("src", "images/" + number + ".jpg");
+                sliderPhoto.fadeIn(400);
+            }
+            else {
+                sliderPhoto.hide();
+                number--;
+                sliderPhoto.attr("src", "images/" + number + ".jpg");
+                sliderPhoto.fadeIn(400);
+            }
+        });
+        arrowRight.click(function() {
+            console.log( "klikneles prawa strzalke" );
+            if (number === numberPhotos) {
+                sliderPhoto.hide();
+                number = 0;
+                sliderPhoto.attr("src", "images/" + number + ".jpg");
+                sliderPhoto.fadeIn(400);
+            } else {
+                sliderPhoto.hide();
+                number++;
+                sliderPhoto.attr("src", "images/" + number + ".jpg");
+                sliderPhoto.fadeIn(400);
+            }
+        })
+    }
+    slider(2);
 });
 
 // JS
+
+// JS form validator
 document.addEventListener("DOMContentLoaded", function() {
     var nameInp = document.getElementById('usrInp');
     var emailInp = document.getElementById('emailInp');
@@ -84,6 +127,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    //
-    
+    // mess check no to be empty
+    mesInp.addEventListener("blur", function(event){
+        console.log('sprawdzony email');
+        if (mesInp.value=="") {
+            hasMes.className = "has-error";
+            return false;
+        }
+        else {
+            hasMes.className = "has-success";
+            return true;
+        }
+    });
 });
