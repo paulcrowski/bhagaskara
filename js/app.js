@@ -33,6 +33,9 @@ $(document).ready(function(){
         var arrowRight = $('.arrow-right'); // strzalka prawa
         var sliderPhoto = $('#sliderPhoto'); // fotka
         var number = 0; // zmienna pomocnicza
+        var newsTab = ["ego praca została doceniona i w 1819 podpisał kontrakt z Departamentem",
+            "to jest bardzo wazne by moc fajnei tworzyc strony","te teksty latwo zmienic w js"];
+        var newsHtml = $('#news');
 
         arrowLeft.click(function() {
             console.log( "klikneles lewa strzalke" );
@@ -41,12 +44,16 @@ $(document).ready(function(){
                 number = numberPhotos;
                 sliderPhoto.attr("src", "images/" + number + ".jpg");
                 sliderPhoto.fadeIn(400);
+                console.log(newsTab[number]);
+                news.innerHTML = newsTab[number];
             }
             else {
                 sliderPhoto.hide();
                 number--;
                 sliderPhoto.attr("src", "images/" + number + ".jpg");
                 sliderPhoto.fadeIn(400);
+                console.log(newsTab[number]);
+                news.innerHTML = newsTab[number];
             }
         });
         arrowRight.click(function() {
@@ -56,11 +63,13 @@ $(document).ready(function(){
                 number = 0;
                 sliderPhoto.attr("src", "images/" + number + ".jpg");
                 sliderPhoto.fadeIn(400);
+                news.innerHTML = newsTab[number];
             } else {
                 sliderPhoto.hide();
                 number++;
                 sliderPhoto.attr("src", "images/" + number + ".jpg");
                 sliderPhoto.fadeIn(400);
+                news.innerHTML = newsTab[number];
             }
         })
     }

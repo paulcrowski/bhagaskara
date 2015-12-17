@@ -188,6 +188,22 @@ svg
 .numData {
   font-size: 1.6em; }
 
+.arrow {
+  display: inline-block;
+  color: #ffffff;
+  background-color: palevioletred;
+  border-color: #130269;
+  cursor: crosshair;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.arrow:hover {
+  color: #ffffff;
+  background-color: #9f449b;
+  border-color: #130269; }
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;

@@ -284,6 +284,25 @@ button {
   font-size: 1.6em;
 }
 
+.arrow{
+  display: inline-block;
+  color: #ffffff;
+  background-color: $buttonColor;
+  border-color: #130269;
+  cursor: crosshair;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.arrow:hover
+{
+  color: #ffffff;
+  background-color: $buttonColorHover;
+  border-color: #130269;
+}
+
 // ############## our portfolio
 .hvr-grow {
   display: inline-block;
