@@ -55,10 +55,35 @@ document.addEventListener("DOMContentLoaded", function() {
         else
         {
             hasName.className = "has-error";
-            uname.focus();
+            //uname.focus();
             return false;
         }
     }
 
     // email check in form
+    emailInp.addEventListener("blur", function(event){
+        console.log('sprawdzony email');
+        allEmail(emailInp);
+    });
+
+    function allEmail(emailInp)
+    {
+        var email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;;
+        var hasEmail = document.getElementById('hasEmail');
+        if(emailInp.value.match(email))
+        {
+            hasEmail.className = "has-success";
+            console.log('wow poprawne dane');
+            return true;
+        }
+        else
+        {
+            hasEmail.className = "has-error";
+            //emailInp.focus();
+            return false;
+        }
+    }
+
+    //
+    
 });
