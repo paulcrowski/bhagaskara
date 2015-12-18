@@ -3,15 +3,19 @@
 $primarycolor : cadetblue;
 $secendarycolor : darkslateblue;
 $rowcolor: lightgray;
-$buttonColor: palevioletred;
+$buttonColor: #9f449b;
 $buttonColorHover: #9f449b;
 $buttonBorder: violet;
 
-
+.main-color {
+  color: $buttonColorHover;
+}
 
 .btn-default {
   border-color: $buttonBorder;
   background-color: $buttonColor;
+  padding: 15px 50px;
+  color:white;
 }
 
 .btn-default:hover
@@ -85,12 +89,13 @@ button {
 .cls-1, .cls-2, .cls-4 {
   fill: #fff;
 }
-.cls-1 {
+.cls-1, .cls-5 {
   stroke: #fff;
   stroke-linejoin: round;
   stroke-width: 4px;
   fill-opacity: 0.1;
 }
+
 .cls-1:hover,
 .cls-2:hover {
   stroke: #9f449b;
@@ -99,7 +104,7 @@ button {
   fill-opacity: 1;
   fill: #9f449b;
 }
-.cls-1, .cls-2 {
+.cls-1, .cls-2, .cls-5 {
   fill-rule: evenodd;
 }
 
@@ -112,7 +117,11 @@ button {
   text-align: center;
   max-width: 162px;
   width: 162px;
-  margin: 0 auto;
+  margin: 25px auto;
+}
+
+.cls-5 {
+  width: 30%;
 }
 
 .greyLine {
@@ -125,6 +134,7 @@ button {
 .laptop {
   float:left;
   width:50%;
+  padding-bottom: 6%;
 }
 
 // paralax
@@ -207,7 +217,7 @@ button {
 .violet-bell {
   width: 90%;
   height:20px;
-  background-color: violet;
+  background-color: $buttonColor;
   animation: bar1 3s;
   -moz-animation: bar 3s;
   -webkit-animation: bar1 3s;
@@ -222,7 +232,7 @@ button {
 .violet-bell2 {
   width: 70%;
   height:20px;
-  background-color: violet;
+  background-color: $buttonColor;
   animation: bar2 3s;
   -moz-animation: bar2 3s;
   -webkit-animation: bar2 3s;
@@ -237,7 +247,7 @@ button {
 .violet-bell3 {
   width: 75%;
   height:20px;
-  background-color: violet;
+  background-color: $buttonColor;
   animation: bar3 3s;
   -moz-animation: bar3 3s;
   -webkit-animation: bar3 3s;
@@ -252,7 +262,7 @@ button {
 .violet-bell4 {
   width: 80%;
   height:20px;
-  background-color: violet;
+  background-color: $buttonColor;
   animation: bar4 3s;
   -moz-animation: bar4 3s;
   -webkit-animation: bar4 3s;
@@ -265,8 +275,15 @@ button {
 }
 // ########### 365
 
-.numData {
-  font-size: 1.6em;
+.numData, .numData2 {
+  font-size: 2.0em;
+  padding: 0;
+  margin: 0;
+}
+
+.numData2 {
+  font-size: 0.8em;
+  padding-bottom: 40px;
 }
 
 .arrow{
@@ -281,6 +298,10 @@ button {
   border-radius: 10px;
 }
 
+.pad-small {
+  padding:0;
+  margin:0;
+}
 .arrow:hover
 {
   color: #ffffff;
@@ -306,4 +327,8 @@ button {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.red {
+  color:blue;
 }

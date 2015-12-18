@@ -1,10 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+.main-color {
+  color: #9f449b; }
+
 .btn-default {
   border-color: violet;
-  background-color: palevioletred; }
+  background-color: #9f449b;
+  padding: 15px 50px;
+  color: white; }
 
 .btn-default:hover {
-  border-color: palevioletred;
+  border-color: #9f449b;
   background-color: #9f449b; }
 
 body {
@@ -54,7 +59,7 @@ svg
 .cls-1, .cls-2, .cls-4 {
   fill: #fff; }
 
-.cls-1 {
+.cls-1, .cls-5 {
   stroke: #fff;
   stroke-linejoin: round;
   stroke-width: 4px;
@@ -68,7 +73,7 @@ svg
   fill-opacity: 1;
   fill: #9f449b; }
 
-.cls-1, .cls-2 {
+.cls-1, .cls-2, .cls-5 {
   fill-rule: evenodd; }
 
 .cls-4 {
@@ -79,14 +84,18 @@ svg
   text-align: center;
   max-width: 162px;
   width: 162px;
-  margin: 0 auto; }
+  margin: 25px auto; }
+
+.cls-5 {
+  width: 30%; }
 
 .greyLine {
   background-color: lightgray; }
 
 .laptop {
   float: left;
-  width: 50%; }
+  width: 50%;
+  padding-bottom: 6%; }
 
 .paralax {
   background-color: cadetblue;
@@ -149,7 +158,7 @@ svg
 .violet-bell {
   width: 90%;
   height: 20px;
-  background-color: violet;
+  background-color: #9f449b;
   animation: bar1 3s;
   -moz-animation: bar 3s;
   -webkit-animation: bar1 3s; }
@@ -162,7 +171,7 @@ svg
 .violet-bell2 {
   width: 70%;
   height: 20px;
-  background-color: violet;
+  background-color: #9f449b;
   animation: bar2 3s;
   -moz-animation: bar2 3s;
   -webkit-animation: bar2 3s; }
@@ -175,7 +184,7 @@ svg
 .violet-bell3 {
   width: 75%;
   height: 20px;
-  background-color: violet;
+  background-color: #9f449b;
   animation: bar3 3s;
   -moz-animation: bar3 3s;
   -webkit-animation: bar3 3s; }
@@ -188,7 +197,7 @@ svg
 .violet-bell4 {
   width: 80%;
   height: 20px;
-  background-color: violet;
+  background-color: #9f449b;
   animation: bar4 3s;
   -moz-animation: bar4 3s;
   -webkit-animation: bar4 3s; }
@@ -198,19 +207,29 @@ svg
     width: 0; }
   100% {
     width: 80%; } }
-.numData {
-  font-size: 1.6em; }
+.numData, .numData2 {
+  font-size: 2.0em;
+  padding: 0;
+  margin: 0; }
+
+.numData2 {
+  font-size: 0.8em;
+  padding-bottom: 40px; }
 
 .arrow {
   display: inline-block;
   color: #ffffff;
-  background-color: palevioletred;
+  background-color: #9f449b;
   border-color: #130269;
   cursor: crosshair;
   padding: 5px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
+
+.pad-small {
+  padding: 0;
+  margin: 0; }
 
 .arrow:hover {
   color: #ffffff;
@@ -234,5 +253,8 @@ svg
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
+
+.red {
+  color: blue; }
 
 /*# sourceMappingURL=style.css.map */
