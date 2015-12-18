@@ -2,12 +2,10 @@
  * Created by POL on 2015-12-09.
  */
 
-// Jquery
 
-//JQ sticky menu
 $(document).ready(function(){
 
-    //sticky menu
+    //sticky menu JQ
     function stickyMenu () {
         console.log('dziala');
         var menu = $(".navbar");
@@ -30,7 +28,7 @@ $(document).ready(function(){
         });
     }
 
-    // slider
+    // slider JQ
     function slider(numberPhotos) {
         console.log('dziala slider');
         var arrowLeft = $('.arrow-left'); // strzalka lewa
@@ -78,7 +76,7 @@ $(document).ready(function(){
         })
     }
 
-    // JS form validator
+    // form validator JS
 
     function validator () {
         var nameInp = document.getElementById('usrInp');
@@ -157,10 +155,3 @@ $(document).ready(function(){
     slider(2);
     validator();
 });
-
-//// JS
-//
-//// JS form validator
-//document.addEventListener("DOMContentLoaded", function() {
-//
-//});
