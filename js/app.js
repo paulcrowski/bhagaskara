@@ -170,6 +170,10 @@ $(document).ready(function(){
 
     }
 
+    // plugin fancy box
+    $(".fancybox").fancybox();
+
+
     // ############# start me up
     stickyMenu();
     slider(2);
