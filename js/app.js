@@ -149,9 +149,30 @@ $(document).ready(function(){
         });
     }
 
+    // scroll top
+    function scrollMe () {
+        var offset=250; // when to show scroll button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > offset) {
+                $('.top').fadeIn(500);
+            }
+            else {
+                $('.top').fadeOut(500);
+            }
+        });
+
+        // Smooth animation when scrolling
+        $('.top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0});
+        })
+
+    }
 
     // ############# start me up
     stickyMenu();
     slider(2);
     validator();
+    scrollMe();
 });
