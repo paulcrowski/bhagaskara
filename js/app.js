@@ -173,7 +173,9 @@ $(document).ready(function(){
     // plugin fancy box
     $(".fancybox").fancybox();
 
+    // plugin scroll
 
+    
     // ############# start me up
     stickyMenu();
     slider(2);
