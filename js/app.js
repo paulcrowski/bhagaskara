@@ -4,30 +4,6 @@
 
 
 $(document).ready(function(){
-
-    //sticky menu JQ
-    function stickyMenu () {
-        console.log('dziala');
-        var menu = $(".navbar");
-        var menuOffsetFromTop = menu.position().top;
-
-        var animate1 = $(".animate1");
-        var animate2 = $(".animate2");
-        var menuOffanimate1 = animate1.position().top;
-        var menuOffanimate2 = animate2.position().top;
-
-        $(window).on("scroll", function (event) {
-            //console.log($(window).scrollTop());
-            //console.log(menu.position());
-            if ($(window).scrollTop() > menuOffsetFromTop) {
-                menu.addClass("navbar-fixed-top");
-            }
-            else {
-                menu.removeClass("navbar-fixed-top");
-            }
-        });
-    }
-
     // slider JQ
     function slider(numberPhotos) {
         console.log('dziala slider');
@@ -175,9 +151,75 @@ $(document).ready(function(){
 
     // plugin scroll
 
-    
+    //$(document).ready(function () {
+    //    $('ul.nav > li').click(function (e) {
+    //        $('ul.nav > li').removeClass('active');
+    //        $(this).addClass('active');
+    //    });
+    //});
+
+    // add active class to nav on scroll plugin
+    function targetNav() {
+
+        "use strict"; // Start of use strict
+
+        // jQuery for page scrolling feature - requires jQuery Easing plugin
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            }, 1250, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 51
+        });
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+
+
+
+        // Offset for Main Navigation
+        $('#mainNav').affix({
+            offset: {
+                top: 100
+            }
+        })
+
+    }
+
+    //sticky menu JQ
+    function stickyMenu () {
+        console.log('dziala sticky');
+        var menu = $(".navbar");
+        var menuOffsetFromTop = menu.position().top;
+
+        //var animate1 = $(".animate1");
+        //var animate2 = $(".animate2");
+        //var menuOffanimate1 = animate1.position().top;
+        //var menuOffanimate2 = animate2.position().top;
+
+        $(window).on("scroll", function (event) {
+            //console.log($(window).scrollTop());
+            //console.log(menu.position());
+            if ($(window).scrollTop() > menuOffsetFromTop) {
+                menu.addClass("navbar-fixed-top");
+            }
+            else {
+                menu.removeClass("navbar-fixed-top");
+            }
+        });
+    }
+
     // ############# start me up
     stickyMenu();
+    targetNav();
     slider(2);
     validator();
     scrollMe();
