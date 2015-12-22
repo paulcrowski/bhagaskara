@@ -13,7 +13,9 @@
   background-color: #9f449b; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 h1, h2, h3, p, img, a {
   padding: 10px; }
@@ -271,6 +273,9 @@ svg
 .top:hover {
   opacity: 1;
   transition: 1s; }
+
+.welcome {
+  width: 600px; }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */

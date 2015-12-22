@@ -26,6 +26,8 @@ $buttonBorder: violet;
 
 body {
   font-family: 'Lato', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p, img, a {
@@ -351,7 +353,9 @@ button {
 }
 
 // mediaaaaaa queries
-
+.welcome {
+ width:600px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {

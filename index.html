@@ -9,6 +9,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/animations.css">
+    <!--[if lte IE 9]>
+    <link href='css/animations-ie-fix.css' rel='stylesheet'>
+    <![endif]-->
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
     <script src="js/app.js"></script>
@@ -18,11 +22,11 @@
 <!--################ Main header photo, 5 icons-->
 
 <header class="intro" id="start">
-    <div class="intro-body">
-        <div class="container-fluid">
+    <div class="intro-body animatedParent animateOnce">
+        <div class="container-fluid animated bounceInDown">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
-                    <h1 class="brand-heading">Bhagas<span class="main-color">kara</span></h1>
+                <div class="col-sm-offset-1 col-sm-10 ">
+                    <h1 class="brand-heading ">Bhagas<span class="main-color">kara</span></h1>
                     <p class="intro-text">Witaj na pustym szablonie Bhagaskara, działa menu, formularz, paralax, slider w JS i Jquery.</p>
                     <div class="row">
                         <div class="col-sm-4 col-sm-offset-4">
@@ -186,14 +190,14 @@
     <div class="row" id="about">
         <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
-            <div class="about">
-            <h1 class="text-center">About <span class="main-color">us</span></h1>
-            <img src="images/komputer.jpg" class="laptop" alt="komputer">
-            <p>Tu mozna cos napisac fajnie, a moze lepiej nie i tak dalej
-            cos napisac fajnie, a moze lepiej nie i tak dalej
-            tu mozna cos napisac fajnie, a moze lepiej nie i tak dalej
-            cos napisac fajnie, a moze lepiej nie i tak dalej</p>
-            <a href="#" class="btn btn-default">Learn more</a>
+            <div class="about animatedParent animateOnce data-appear-top-offset='-300'">
+                <h1 class="text-center animated bounceInDown">About <span class="main-color">us</span></h1>
+                <img src="images/komputer.jpg" class="laptop animated bounceInLeft" alt="komputer">
+                <p class="animated bounceInRight">Tu mozna cos napisac fajnie, a moze lepiej nie i tak dalej
+                cos napisac fajnie, a moze lepiej nie i tak dalej
+                tu mozna cos napisac fajnie, a moze lepiej nie i tak dalej
+                cos napisac fajnie, a moze lepiej nie i tak dalej</p>
+                <a href="#" class="btn btn-default animated bounceInRight">Learn more</a>
             </div>
         </div>
         </div> <!-- /col-sm-10 -->
@@ -380,8 +384,8 @@
 
             <!-- ########### get in touch-->
             <h2 class="text-center">Get in <span class="main-color">touch</span></h2>
-            <div class="row" id="contact">
-                <div class="col-sm-offset-1 col-sm-5">
+            <div class="row animatedParent animateOnce" data-appear-top-offset='-150' id="contact">
+                <div class="col-sm-offset-1 col-sm-5 animated bounceInLeft">
                     <div class="form-group" id="hasName">
                         <label for="usrInp">Name:</label>
                         <input id="usrInp" type="text" class="form-control" >
@@ -396,7 +400,7 @@
                         <a href="#" class="btn btn-default">Send</a>
                     </div>
                 </div>
-                <div class="col-sm-offset-1 col-sm-5">
+                <div class="col-sm-offset-1 col-sm-5 animated bounceInRight">
                     <p>Zapraszamy do kontaktu i odwiedzin</p>
                     <p>Adres:</p>
                     <address>
@@ -420,6 +424,6 @@
 
 </div> <!-- /container -->
 <a href="#" class="top">&uarr;</a>
-
+<script src='js/css3-animate-it.js'></script>
 </body>
 </html>
